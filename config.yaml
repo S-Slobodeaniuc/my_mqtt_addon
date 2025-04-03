@@ -11,5 +11,3 @@ arch:
 startup: application
 host_network: true
 image: "sergheislobodeaniuc/my_mqtt_app:latest"
-ports:
-  - 1883:1883
