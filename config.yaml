@@ -10,4 +10,4 @@ arch:
   - i386
 startup: application
 host_network: true
-image: "docker.io/sergheislobodeaniuc/my_mqtt_app:latest"
+image: "sergheislobodeaniuc/my_mqtt_app"
