@@ -10,4 +10,7 @@ t e
 t e
 t
  et
+
+
+ potprop rpotollgr rlrl rlr
   
