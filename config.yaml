@@ -1,5 +1,5 @@
 name: "MQTT Client"
-version: "1.0.0"
+version: "latest"
 slug: "mqtt_client"
 description: "An MQTT client running in a pre-built Docker container."
 arch:
