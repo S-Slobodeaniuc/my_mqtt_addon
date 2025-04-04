@@ -1,7 +1,7 @@
-name: "MQTT Client"
+name: "MQTT ClientT"
 version: "latest"
-slug: "mqtt_client"
-description: "An MQTT client running in a pre-built Docker container."
+slug: "mqtt_clientT"
+description: "An MQTTtt client running in a pre-built Docker container."
 arch:
   - aarch64
   - amd64
