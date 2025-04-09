@@ -3,10 +3,10 @@
 # Log everything to the Home Assistant Supervisor logs
 echo "Starting the add-on at $(date)"  # Simple log entry
 # Access the options from Home Assistant configuration
-export BROKER_IP=$(bashio::config 'broker_ip')
-export BROKER_PORT=$(bashio::config 'broker_port')
-export MQTT_USER=$(bashio::config 'mqtt_user')  # Get the MQTT user from config.yaml
-export MQTT_PASS=$(bashio::config 'mqtt_pass')  # Get the MQTT password from config.yaml
+export BROKER_IP="192.168.1.222"
+export BROKER_PORT="1883"
+export MQTT_USER="user"
+export MQTT_PASS="passwd"
 
 # Log the environment variables (optional)
 echo "echo Using broker: $BROKER_IP:$BROKER_PORT"
