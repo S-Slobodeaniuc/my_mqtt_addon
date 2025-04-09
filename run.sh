@@ -9,7 +9,9 @@ export MQTT_USER=$(bashio::config 'mqtt_user')  # Get the MQTT user from config.
 export MQTT_PASS=$(bashio::config 'mqtt_pass')  # Get the MQTT password from config.yaml
 
 # Log the environment variables (optional)
-echo "Using broker: $BROKER_IP:$BROKER_PORT"
-echo "Using MQTT user: $MQTT_USER"
+echo "echo Using broker: $BROKER_IP:$BROKER_PORT"
+echo "echo Using MQTT user: $MQTT_USER"
+bashio::log.info "bash Using broker: $BROKER_IP:$BROKER_PORT"
+bashio::log.info "bash Using MQTT user: $MQTT_USER"
 
 /app/my_mqtt_app
