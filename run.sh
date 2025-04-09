@@ -14,4 +14,8 @@ echo "echo Using MQTT user: $MQTT_USER"
 bashio::log.info "bash Using broker: $BROKER_IP:$BROKER_PORT"
 bashio::log.info "bash Using MQTT user: $MQTT_USER"
 
+# Debug: Print environment variables to verify if they're set correctly
+echo "Environment variables:"
+env
+
 /app/my_mqtt_app
