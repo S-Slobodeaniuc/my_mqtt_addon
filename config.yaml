@@ -11,3 +11,13 @@ arch:
 startup: application
 host_network: true
 image: "sergheislobodeaniuc/my_mqtt_app"
+options:
+  broker_ip: "192.168.1.222"
+  broker_port: 1883
+  mqtt_user: "user"
+  mqtt_pass: "your_pass"
+schema:
+  broker_ip: str
+  broker_port: port
+  mqtt_user: str
+  mqtt_pass: password
