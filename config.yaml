@@ -21,8 +21,3 @@ schema:
   broker_port: port
   mqtt_user: str
   mqtt_pass: password
-environment:
-  BROKER_IP: "${broker_ip}"
-  BROKER_PORT: "${broker_port}"
-  MQTT_USER: "${mqtt_user}"
-  MQTT_PASS: "${mqtt_pass}"
