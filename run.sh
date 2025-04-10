@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bashio
 
 # Log everything to the Home Assistant Supervisor logs
 echo "Starting the add-on at $(date)"  # Simple log entry
