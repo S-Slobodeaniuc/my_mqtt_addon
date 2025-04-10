@@ -1,0 +1,11 @@
+{
+  "name": "My Custom C++ App",
+  "version": "1.0",
+  "slug": "my_custom_cpp_app",
+  "description": "This is a custom C++ app running in Docker",
+  "startup": "application",
+  "boot": "auto",
+  "image": "sergheislobodeaniuc/my_mqtt_app:latest",
+  "arch": ["amd64"],
+  "map": ["config:rw"]
+}
