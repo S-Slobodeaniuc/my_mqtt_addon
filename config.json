@@ -5,7 +5,7 @@
   "description": "This is a custom C++ app running in Docker",
   "startup": "application",
   "boot": "auto",
-  "image": "sergheislobodeaniuc/my_mqtt_app:latest",
+  "image": "sergheislobodeaniuc/my_mqtt_app",
   "arch": ["amd64"],
   "map": ["config:rw"]
 }
