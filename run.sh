@@ -2,20 +2,17 @@
 
 # Log everything to the Home Assistant Supervisor logs
 echo "Starting the add-on at $(date)"  # Simple log entry
+
 # Access the options from Home Assistant configuration
-export BROKER_IP="192.168.1.222"
-export BROKER_PORT="1883"
-export MQTT_USER="user"
-export MQTT_PASS="passwd"
+export BROKER_IP=$(bashio::config 'broker_ip')
+export BROKER_PORT=$(bashio::config 'broker_port')
+export MQTT_USER=$(bashio::config 'mqtt_user')  # Get the MQTT user from config.yaml
+export MQTT_PASS=$(bashio::config 'mqtt_pass')  # Get the MQTT password from config.yaml
 
-# Log the environment variables (optional)
-echo "echo Using broker: $BROKER_IP:$BROKER_PORT"
-echo "echo Using MQTT user: $MQTT_USER"
-bashio::log.info "bash Using broker: $BROKER_IP:$BROKER_PORT"
-bashio::log.info "bash Using MQTT user: $MQTT_USER"
+# Log the environment variables (optional, can be removed for security)
+bashio::log.info "Using broker: $BROKER_IP:$BROKER_PORT"
+bashio::log.info "Using MQTT user: $MQTT_USER"
 
-# Debug: Print environment variables to verify if they're set correctly
-echo "Environment variables:"
-env
-
+# Make sure the MQTT application can be executed (path to your app depends on Docker setup)
+# Assuming your executable is located in the /app directory
 /app/my_mqtt_app
