@@ -9,6 +9,7 @@ arch:
   - armv7
   - i386
 startup: application
+init: false
 host_network: true
 image: "sergheislobodeaniuc/my_mqtt_app"
 options:
