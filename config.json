@@ -7,5 +7,26 @@
   "boot": "auto",
   "image": "sergheislobodeaniuc/my_mqtt_app",
   "arch": ["amd64"],
-  "map": ["config:rw"]
+    "map": ["config:rw"],
+
+  "options": {
+    "broker_ip": "default_value",
+    "broker_port": 1883,
+    "mqtt_user": "none",
+    "mqtt_pass": "none",
+  },
+
+  "schema": {
+    "broker_ip": "str",
+    "broker_port": "int",
+    "mqtt_user": "str"
+    "mqtt_pass": "str"
+  },
+
+  "environment": {
+    "BROKER_IP": "${broker_ip}",
+    "BROKER_PORT": "${broker_port}",
+    "USERNAME": "${mqtt_user}"
+    "PASSWORD": "${mqtt_pass}"
+  }
 }
