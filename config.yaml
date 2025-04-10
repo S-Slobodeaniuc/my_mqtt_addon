@@ -2,6 +2,7 @@ name: "MQTT ClientT"
 version: "latest"
 slug: "mqtt_clientT"
 description: "An MQTTtt client running in a pre-built Docker container."
+init: false
 arch:
   - aarch64
   - amd64
