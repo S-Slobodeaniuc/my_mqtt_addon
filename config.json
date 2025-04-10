@@ -12,14 +12,18 @@
     "broker_ip": "default_value",
     "broker_port": 1883,
     "mqtt_user": "none",
-    "mqtt_pass": "none"
+    "mqtt_pass": "none",
+    "test_env":"nnn1111",
+    "TEST_ENV":"nnn2222"
   },
 
   "schema": {
     "broker_ip": "str",
     "broker_port": "int",
     "mqtt_user": "str",
-    "mqtt_pass": "str"
+    "mqtt_pass": "str",
+    "test_env":"str",
+    "TEST_ENV":"str"
   },
 
   "environment": {
