@@ -13,8 +13,7 @@
     "broker_port": 1883,
     "mqtt_user": "none",
     "mqtt_pass": "none",
-    "test_env":"nnn1111",
-    "TEST_ENV":"nnn2222"
+    "test_env":"nnn1111"
   },
 
   "schema": {
@@ -22,16 +21,14 @@
     "broker_port": "int",
     "mqtt_user": "str",
     "mqtt_pass": "str",
-    "test_env":"str",
     "TEST_ENV":"str"
   },
 
   "environment": {
     "BROKER_IP": "none",
     "BROKER_PORT": "none",
-    "USERNAME": "none",
-    "PASSWORD": "none",
-    "TEST_ENV": "test_value1",
-    "test_env":"test_value2"
+    "MQTT_USER": "none",
+    "MQTT_PASS": "none",
+    "TEST_ENV": "test_value1"
   }
 }
