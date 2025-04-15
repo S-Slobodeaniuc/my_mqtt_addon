@@ -27,11 +27,11 @@
   },
 
   "environment": {
-    "BROKER_IP": "${broker_ip}",
-    "BROKER_PORT": "${broker_port}",
-    "USERNAME": "${mqtt_user}",
-    "PASSWORD": "${mqtt_pass}",
-    "TEST_ENV": "test_valuie_ooo",
-    "test_env":"small_test_valu"
+    "BROKER_IP": "none",
+    "BROKER_PORT": "none",
+    "USERNAME": "none",
+    "PASSWORD": "none",
+    "TEST_ENV": "test_value1",
+    "test_env":"test_value2"
   }
 }
