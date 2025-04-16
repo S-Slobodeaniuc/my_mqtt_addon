@@ -19,7 +19,7 @@
     "broker_ip": "str",
     "broker_port": "int",
     "mqtt_user": "str",
-    "mqtt_pass": "str"
+    "mqtt_pass": "password"
   },
 
   "environment": {
